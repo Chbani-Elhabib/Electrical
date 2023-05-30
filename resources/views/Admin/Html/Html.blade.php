@@ -7,6 +7,7 @@
         <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
         <!-- ======= Styles ====== -->
         @vite([ 'resources/css/Admin/HeaderAndNav/Nav.css' ])
+        @yield('css')
     </head>
     <body>
 
@@ -29,6 +30,7 @@
         <!-- ======= js ====== -->
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         @vite([ 'resources/js/Admin/HeaderAndNav/Nav.js' ])
+        @yield('js')
         <!-- ====== ionicons ======= -->
         <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
