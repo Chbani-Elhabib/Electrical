@@ -76,5 +76,6 @@ Route::controller(PeopleController::class)->group(function () {
     Route::POST('/admin/profile/password/update','UpdatePassword');
     Route::POST('/user/update/password','UpdatePassword');
     Route::POST('/admin/person/delete','destroy');
+    Route::POST('/user/order','order');
  
 });

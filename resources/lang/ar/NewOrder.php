@@ -8,6 +8,7 @@ return [
     'Regions' => 'منطقة',
     'city' => 'مدينة',
     'Address' => 'عنوان',
+    'body' => 'محتوى',
     'NewOrder' => 'طلب جديد',
     
     

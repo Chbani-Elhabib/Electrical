@@ -8,6 +8,7 @@ return [
     'Regions' => 'Region',
     'city' => 'city',
     'Address' => 'Address',
+    'body' => 'body',
     'NewOrder' => 'New Order',
     
     

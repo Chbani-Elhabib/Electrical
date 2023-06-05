@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use App\Models\People;
+use App\Models\Order;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File; 
@@ -386,4 +387,56 @@ class PeopleController extends Controller
         }
         return 'no';
     }
+
+    public function order(Request $request)
+    {
+        $Person = $request->session()->get('Person');
+        if(isset($Person)){
+
+            // Validate the Telf
+            $request->validate([
+                'Telf' => 'required|string',
+            ]);
+    
+            // Validate the FullName
+            if (isset($request->Name)) {
+                $Name = $request->Name ;
+            }else{
+                $Name = $Person->FullName ;
+            }
+    
+    
+            // Validate the Address
+            if (isset($request->Address)) {
+                $Address = $request->Address ;
+            }else{
+                $Address = $Person->Address ;
+            }
+
+
+            $Person->Telf = $request->Telf;
+            $Person->FullName = $Name;
+            $Person->Address = $Address ;
+            $Person->save();
+
+
+            // Validate the body
+            if (isset($request->body)) {
+                $body = $request->body ;
+            }else{
+                $body = '' ;
+            }
+
+            $Order = new Order();
+            $Order->id_order  = Str::random(10) ;
+            $Order->id_people  = $Person->id_people ;
+            $Order->body = $body ;
+            $Order->save();
+
+        }
+    
+        return redirect()->back();
+
+    }
+
 }
