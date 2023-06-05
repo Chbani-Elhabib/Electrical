@@ -16,6 +16,7 @@ return new class extends Migration
             $table->primary('id_order');
             $table->string('id_people');
             $table->foreign('id_people')->references('id_people')->on('people')->onUpdate('cascade')->onDelete('cascade');
+            $table->text('body');
             $table->timestamps();
         });
     }

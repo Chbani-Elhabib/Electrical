@@ -1,0 +1,183 @@
+body div.containere section{
+    position: fixed;
+    top: 66px;
+    right: 5px;
+    left: 91px;
+    bottom: 7px;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 12%) !important;
+    overflow: overlay;
+    transition: left 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+body div.containere div.navigation.active + section{
+    left: 256px !important;
+}
+
+body div.containere section article:nth-child(1){
+    max-width: 750px;
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+body div.containere section article:nth-child(1) button{
+    font-family: math;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+body div.containere section article:nth-child(2){
+    max-width: 706px;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+body div.containere section article:nth-child(3){
+    max-width: 706px;
+    width: 80%;
+    margin: 19px auto 18px;
+    clear: right;
+    padding-top: 31px;
+}
+
+body div.containere section article:nth-child(3) .table tbody tr th div.usersin {
+    display: flex;
+    align-items: center;
+}
+
+body div.containere section article:nth-child(3) .table tbody tr th div.usersin div:first-child {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50px;
+}
+
+body div.containere section article:nth-child(3) .table tbody tr th div.usersin div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+body div.containere section article:nth-child(3) div#example_wrapper div.row:nth-child(2) {
+    min-height: 376px;
+}
+
+/* 
+====================================================================================
+-------------------- show card 
+=========== 
+*/
+
+body div.containere div.show-data div.card-content{
+    position: absolute;
+    top: 67px;
+    left: 53%;
+    transform: translate(-50%);
+    z-index: 1;
+    max-width: 850px;
+    width: 80%;
+    background-color: #f7f7f7;
+    border-radius: 7px;
+}
+
+body div.containere div.show-data div.card-content div.usinfo{
+    font-size: 21px;
+    border-bottom: #282c2f solid 1px;
+    width: 96%;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+
+body div.containere div.show-data div.card-content div.information{
+    border: #3e424524 solid 0.1px;
+    background-color: #d7e0f3!important;
+    max-width: 734px;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+body div.containere div.show-data div.card-content div.information p{
+    font-size: 18px;
+    font-weight: 550;
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+
+body div.containere div.show-data div.card-content div.information ion-icon{
+    font-size: 26px;
+    margin-top: 6px;
+    margin-right: 12px;
+    transition: transform 0.5s ease-in-out;
+}
+
+body div.containere div.show-data div.card-content div.information ion-icon.active{
+    margin-bottom: 5px;
+    transform: rotateZ(178deg);
+}
+
+
+
+body div.containere div.show-data div.card-content div.information-user{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'input1 input1'
+        'input2 input3'
+        'input4 input4'
+        'input5 input6'
+        'input7 input7';
+    max-width: 712px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(1){
+    grid-area: input1;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(2){
+    grid-area: input2;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(3){
+    grid-area: input3;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(4){
+    grid-area: input4;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(5){
+    grid-area: input5;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(6){
+    grid-area: input6;
+}
+
+body div.containere div.show-data div.card-content div.information-user div:nth-child(7){
+    grid-area: input7;
+}
+
+
+
+body div.containere div.show-data div.card-content div.information-user div p:first-child,
+body div.containere div.show-data div.card-content div.additional div p:first-child{
+    font-size: 18px;
+    font-weight: 550;
+    font-family: 'Open Sans';
+}
+
+body div.containere div.show-data div.card-content div.information-user div p:last-child,
+body div.containere div.show-data div.card-content div.additional div p:last-child{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+}
+

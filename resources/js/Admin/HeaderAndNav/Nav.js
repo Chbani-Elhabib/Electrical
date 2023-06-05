@@ -11,6 +11,15 @@ $(document).ready(function(){
         main.toggleClass("active");
     })
     
+    let user = $(".user");
+    let menu = $(".menu");
+
+
+    user.click( function(){
+        menu.fadeToggle(200);
+    })
+
+    
 });
 
 

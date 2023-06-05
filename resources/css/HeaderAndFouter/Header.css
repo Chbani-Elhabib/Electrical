@@ -1,4 +1,4 @@
-header.header div.sign{
+body div.sign{
     position: fixed;
     left: 0;
     top: 0;
@@ -6,7 +6,7 @@ header.header div.sign{
     bottom: 0;
     background: rgba(0, 0, 0, .6);
     display: none;
-    z-index: 2;
+    z-index: 5;
 }
 
 /* ---------------
@@ -14,9 +14,9 @@ header.header div.sign{
 -------------- */
 
 
-header.header div.sign .center {
+body div.sign .center {
     position: absolute;
-    top: 42%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 548px;
@@ -25,11 +25,19 @@ header.header div.sign .center {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
-header.header div.sign .up {
+.swal2-title {
+    font-size: 20px !important;
+}
+
+.swal2-icon {
+    font-size: 15px; 
+}
+
+body div.sign .up {
     display: none;
 }
 
-header.header div.sign .center .fa-solid {
+body div.sign .center .fa-solid {
     position: absolute;
     top: 5px;
     right: 14px;
@@ -37,7 +45,7 @@ header.header div.sign .center .fa-solid {
     cursor: pointer;
 }
 
-header.header div.sign .center h1.tille {
+body div.sign .center h1.tille {
     padding: 20px 0;
     width: 100%;
     text-align: center;
@@ -46,34 +54,34 @@ header.header div.sign .center h1.tille {
     font-weight: 700;
 }
 
-header.header div.sign .center h1.tille-up {
+body div.sign .center h1.tille-up {
     padding: 8px;
 }
 
 /* start sing in google */
 
-header.header div.sign .center .g-signin2 {
+body div.sign .center .g-signin2 {
     display: flex;
     justify-content: center;
 }
 
-header.header div.sign .center .google {
+body div.sign .center .google {
     margin-top: 14px;
 }
 
-header.header div.sign .center .g-signin2 .abcRioButton {
+body div.sign .center .g-signin2 .abcRioButton {
     height: 48px !important;
     width: 264px !important;
     border-radius: 50px;
 }
 
-header.header div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper {
+body div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header.header div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper .abcRioButtonSvg {
+body div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper .abcRioButtonSvg {
     position: absolute;
     bottom: 11px;
     left: 45px;
@@ -81,30 +89,30 @@ header.header div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrap
     height: 26px;
 }
 
-header.header div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper .abcRioButtonContents span:first-child {
+body div.sign .center .g-signin2 .abcRioButton .abcRioButtonContentWrapper .abcRioButtonContents span:first-child {
     font-size: 27px;
     font-family: "Gotham", "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* end sing in google */
 
-header.header div.sign .center .div-or {
+body div.sign .center .div-or {
     display: flex;
     align-items: center;
     margin: 24px 0 0;
 }
 
-header.header div.sign .center .or {
+body div.sign .center .or {
     margin: 0;
     margin-top: 13px;
 }
 
-header.header div.sign .center .div-or h1 {
+body div.sign .center .div-or h1 {
     text-align: center;
     width: 100%;
 }
 
-header.header div.sign .center .div-or span.or::before {
+body div.sign .center .div-or span.or::before {
     content: '';
     position: absolute;
     width: 32%;
@@ -112,28 +120,28 @@ header.header div.sign .center .div-or span.or::before {
     background: #00846b;
 }
 
-header.header div.sign .center .div-or span.or:first-child::before {
+body div.sign .center .div-or span.or:first-child::before {
     left: 68px;
 }
 
-header.header div.sign .center .div-or span.or:last-child::before {
+body div.sign .center .div-or span.or:last-child::before {
     right: 68px;
 }
 
-header.header div.sign .center form {
+body div.sign .center form {
     padding: 0 40px;
     box-sizing: border-box;
     width: 89%;
     margin: 0 auto;
 }
 
-header.header div.sign .center form .txt_field {
+body div.sign .center form .txt_field {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 22px auto 30px;
 }
 
-header.header div.sign .center form .txt_field input {
+body div.sign .center form .txt_field input {
     width: 100%;
     padding: 0 39px 0 5px;
     height: 40px;
@@ -143,7 +151,13 @@ header.header div.sign .center form .txt_field input {
     outline: none;
 }
 
-header.header div.sign .center form .txt_field label {
+
+html[lang="ar"] body div.sign .center form .txt_field input{
+    direction: rtl;
+    padding-right: 13px;
+}
+
+body div.sign .center form .txt_field label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -154,9 +168,13 @@ header.header div.sign .center form .txt_field label {
     cursor: pointer;
 }
 
+html[lang="ar"] body div.sign .center form .txt_field label{
+    right: 13px;
+    text-align: right;
+}
 
 
-header.header div.sign .center form .txt_field span::before {
+body div.sign .center form .txt_field span::before {
     content: '';
     position: absolute;
     top: 40px;
@@ -168,35 +186,35 @@ header.header div.sign .center form .txt_field span::before {
     transition: .5s;
 }
 
-header.header div.sign .center form .txt_field .span01::before {
+body div.sign .center form .txt_field .span01::before {
     background: #eb0c21;
     width: 100%;
 }
 
-header.header div.sign .center form .txt_field .span01valide::before {
+body div.sign .center form .txt_field .span01valide::before {
     background: #00846b;
 }
 
-header.header div.sign .center form .txt_field input:focus~label,
-header.header div.sign .center form .txt_field input:valid~label {
-    top: -5px;
+body div.sign .center form .txt_field input:focus~label,
+body div.sign .center form .txt_field input:valid~label {
+    top: -8px;
     color: #212529;
 }
 
-header.header div.sign .center form .txt_field input:focus~span::before,
-header.header div.sign .center form .txt_field input:valid~span::before {
+body div.sign .center form .txt_field input:focus~span::before,
+body div.sign .center form .txt_field input:valid~span::before {
     width: 100%;
 }
 
-header.header div.sign .center form .txt_field .label {
+body div.sign .center form .txt_field .label {
     color: #eb0c21 !important;
 }
 
-header.header div.sign .center form .txt_field .labelvalide {
+body div.sign .center form .txt_field .labelvalide {
     color: #00846b !important
 }
 
-header.header div.sign .center form .txt_field .fa-solid {
+body div.sign .center form .txt_field .fa-solid {
     position: absolute;
     top: 5px;
     left: -23px;
@@ -205,7 +223,7 @@ header.header div.sign .center form .txt_field .fa-solid {
     opacity: 0.8;
 }
 
-header.header div.sign .center form .txt_field img {
+body div.sign .center form .txt_field img {
     width: 48px;
     height: 44px;
     position: absolute;
@@ -214,7 +232,7 @@ header.header div.sign .center form .txt_field img {
     display: none;
 }
 
-header.header div.sign .center form .pass {
+body div.sign .center form .pass {
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
@@ -223,12 +241,12 @@ header.header div.sign .center form .pass {
     font-weight: 700;
 }
 
-header.header div.sign .center form .pass:hover {
+body div.sign .center form .pass:hover {
     text-decoration: underline;
     color: #00846b !important;
 }
 
-header.header div.sign .center form input[type="submit"] {
+body div.sign .center form input[type="submit"] {
     width: 100%;
     height: 50px;
     border: 1px solid;
@@ -241,12 +259,12 @@ header.header div.sign .center form input[type="submit"] {
     font-family: "Gotham", "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-header.header div.sign .center form input[type="submit"]:hover {
+body div.sign .center form input[type="submit"]:hover {
     border-color: #387a6e;
     transition: 0.5s;
 }
 
-header.header div.sign .center form .signup_link {
+body div.sign .center form .signup_link {
     margin: 10px 0;
     text-align: center;
     font-size: 16px;
@@ -258,14 +276,18 @@ header.header div.sign .center form .signup_link {
     align-items: center;
 }
 
-header.header div.sign .center form .link-in {
+html[lang="ar"] body div.sign .center form .signup_link{
+    flex-direction: row-reverse;
+}
+
+body div.sign .center form .link-in {
     margin-top: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header.header div.sign .center form .signup_link a {
+body div.sign .center form .signup_link a {
     color: #00846b;
     text-decoration: none;
     margin-left: 13px;
@@ -273,6 +295,82 @@ header.header div.sign .center form .signup_link a {
     font-size: 19px;
 }
 
+html[lang="ar"] body div.sign .center form .signup_link a{
+    margin-right: 10px;
+}
+
 .signup_link a:hover {
     text-decoration: underline;
+}
+
+/* ---------------
+------ profile --------
+-------------- */
+
+body header div.container div.header-actions div.profile div.profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: #0f0e0e0f solid 0.4px;
+}
+
+body header div.container div.header-actions div.profile div.profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body header div.container div.header-actions div.profile div.menu-profile{
+    right: 6px;
+    top: 73px;
+    z-index: 1;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 244px;
+    transition: 0.5s;
+    border: #06060614 solid 0.5px;
+    display: none;
+}
+
+body header div.container div.header-actions div.profile div.menu-profile::before{
+    background-color: #fff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 13px;
+    transform: rotate(45deg);
+    top: -10px;
+    width: 20px;
+    border-left: #06060614 solid 0.5px;
+    border-top: #06060614 solid 0.5px;
+}
+
+body header div.container div.header-actions div.profile div.menu-profile ul a {
+    color: var(--eerie-black-1);
+    text-decoration: none;
+}
+
+body header div.container div.header-actions div.profile div.menu-profile ul a li {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 7px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: auto;
+    font-family: var(--bs-font-sans-serif);
+}
+
+body header div.container div.header-actions div.profile div.menu-profile ul a li:hover{
+    color: #17171799;
+}
+
+body header div.container div.header-actions div.profile div.menu-profile ul a li ion-icon {
+    font-size: 26px;
+    margin-right: 13px;
 }

@@ -1,0 +1,71 @@
+
+section div.Profile.Profile{
+    max-width: 600px;
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: grid;
+    gap: 30px;
+    grid-template-areas:'input1' 'input2' 'input3' 'input4' 'input5' 'input6' 'input7';
+    border: red solid;
+}
+
+
+
+section div.Profile div:nth-child(1){
+    grid-area: input1;
+    width: 305px;
+}
+
+section div.Profile div:nth-child(2){
+    grid-area: input2;
+    width: 305px;
+}
+
+section div.Profile div:nth-child(3){
+    grid-area: input3;
+}
+
+section div.Profile div:nth-child(4){
+    grid-area: input4;
+    width: 305px;
+}
+
+section div.Profile div:nth-child(5){
+    grid-area: input5;
+}
+
+section div.Profile div:nth-child(6){
+    grid-area: input6;
+    width: 305px;
+}
+
+section div.Profile div:nth-child(7){
+    grid-area: input7;
+}
+
+
+
+
+
+
+section div.Profile p {
+    font-size: 21px;
+    font-weight: 900;
+    font-family: 'Open Sans';
+}
+
+
+
+section div.Profile  div p:last-child{
+    border-radius: 4px;
+    font-weight: 550;
+    opacity: 0.8;
+} 
+
+section div.Profile div:nth-child(8) p:first-child{
+    width: 149px;
+}

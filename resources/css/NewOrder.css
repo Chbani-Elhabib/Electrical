@@ -1,0 +1,38 @@
+section form {
+    margin: 74px auto 125px;
+    max-width: 801px;
+    width: 80%;
+}
+
+section form div textarea,
+section form div select,
+section form div input {
+    line-height: 2 !important;
+    font-size: 15px !important;
+}
+
+section form div textarea:focus,
+section form div select:focus,
+section form div input:focus {
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+
+}
+
+section form div label{
+    font-size: var(--fs-4);
+    color: black;
+}
+
+section form div label span{
+    top: 34px;
+    left: -8px;
+}
+
+.swal2-title {
+    font-size: 20px !important;
+}
+
+.swal2-icon {
+    font-size: 15px; 
+}

@@ -15,8 +15,9 @@ return new class extends Migration
             $table->string('id_people');
             $table->primary('id_people');
             $table->string('FullName');
-            $table->string('UserName')->unique();
+            $table->string('UserName');
             $table->string('Password');
+            $table->string('User_Group');
             $table->string('Telf');
             $table->string('Photo');
             $table->string('Country');

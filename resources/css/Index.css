@@ -150,6 +150,7 @@
     font-size: 10px;
     scroll-behavior: smooth;
   }
+
   
   body {
     background-color: var(--white);
@@ -311,7 +312,6 @@
     left: 0;
     width: 100%;
     background-color: var(--white);
-    padding-block: 12px;
     box-shadow: var(--shadow-1);
     z-index: 4;
   }
@@ -528,7 +528,7 @@
   .about-shape-2 {
     display: block;
     bottom: -100px;
-    left: -60px;
+    right: -118px;
     animation: bounce 2.5s infinite;
   }
   
@@ -547,12 +547,22 @@
   .about :is(.section-subtitle, .section-title, .section-text) {
     text-align: left;
   }
+
+   html[lang="ar"] .about :is(.section-subtitle, .section-title, .section-text) {
+    text-align: right;
+    margin-right: 49px;
+  }
   
   .about-item {
     margin-block: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
+  }
+
+  html[lang="ar"] .about-item {
+    flex-direction: row-reverse;
+    margin-right: 77px;
   }
   
   .about-item ion-icon {
@@ -613,6 +623,10 @@
   }
   
   .course-card .card-content { padding: 25px; }
+
+  html[lang="ar"] .course-card .card-content{
+    text-align: right;
+  }
   
   .course-card .badge {
     background-color: var(--kappel_15);
@@ -636,6 +650,11 @@
   .course-card :is(.wrapper, .rating-wrapper, .card-meta-list, .card-meta-item) {
     display: flex;
     align-items: center;
+  }
+
+  .course-card .wrapper{
+    position: absolute;
+    bottom: 16px;
   }
   
   .course-card .wrapper { gap: 10px; }
@@ -791,6 +810,10 @@
     margin-block-start: -100px;
     z-index: 1;
   }
+
+  html[lang="ar"] .blog-card .card-content{
+    text-align: right ;
+  }
   
   .blog-card .card-btn {
     position: absolute;
@@ -863,16 +886,34 @@
   .footer-top {
     display: grid;
     gap: 30px;
+    padding-bottom: 16px;
   }
   
   .footer-brand-text { margin-block: 20px; }
+
+  html[lang="ar"] .footer-brand {
+    text-align: right;
+  }
   
   .footer-brand .wrapper {
     display: flex;
     gap: 5px;
   }
+
+  html[lang="ar"] .footer-brand .wrapper {
+    flex-direction: row-reverse;
+  }
   
   .footer-brand .wrapper .span { font-weight: var(--fw-500); }
+
+  .footer-brand .wrapper:nth-child(3) .span{
+    width: 109px;
+
+  }
+
+  html[lang="ar"] .footer-brand .wrapper:nth-child(3) .span{
+    width: 43px;
+  }
   
   .footer-link { transition: var(--transition-1); }
   
@@ -951,8 +992,55 @@
   }
   
   
+  .footer .grid-list .footer-brand a img{
+    position: absolute;
+    top: -64px;
+  }
+  html[lang="ar"] .footer .grid-list .footer-brand a img{
+    right: -24px;
+  }
+  html[lang="en"] .footer .grid-list .footer-brand a img{
+    left: -18px;
+  }
   
+  html[lang="ar"] .footer .grid-list ul.footer-list{
+    text-align: right;
+  }
+
+  html[lang="ar"] .footer-brand-text{
+    width: 279px;
+    position: relative;
+    right: -48px;
+  }
+
+  html[lang="ar"] .footer-list:last-child{
+    text-align: right;
+  }
+
+  html[lang="ar"] .newsletter-form .input-field{
+    text-align: right;
+  }
+
+  html[lang="ar"] .newsletter-form{
+    flex-direction: row-reverse;
+  }
+
+  html[lang="ar"] .social-list {
+    justify-content: center;
+  }
   
+
+  html[lang="ar"] .copyright {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  html[lang="ar"] .copyright a{
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+  }
   
   /*-----------------------------------*\
     #MEDIA QUERIES
@@ -1134,8 +1222,8 @@
   
     .about-shape-1 {
       display: block;
-      top: -40px;
-      right: -70px;
+      top: 8px;
+      left: -50px;
     }
   
   
@@ -1146,6 +1234,7 @@
   
     .footer-brand,
     .footer-list:last-child { grid-column: auto; }
+
   
     .newsletter-form .btn { padding-block: 10px; }
   
@@ -1201,7 +1290,11 @@
   
     .hero .section-title,
     .hero-text { text-align: left; }
-  
+    
+    html[lang="ar"] .hero .section-title,
+    html[lang="ar"] .hero-text { text-align: right; }
+
+
     .hero .btn { margin-inline: 0; }
   
   
@@ -1234,6 +1327,11 @@
      */
   
     .footer .grid-list { grid-template-columns: 1fr 0.6fr 0.6fr 1.2fr; }
+
+    html[lang="ar"] .footer .grid-list{
+      display: flex;
+      flex-direction: row-reverse;
+    }
   
   }
   
@@ -1315,6 +1413,10 @@
     .navbar-link {
       color: var(--eerie-black-1);
       padding-block: 20px;
+    }
+
+    .navbar-link.active{
+      color: #1ab79d;
     }
   
     .header .btn { margin-inline-end: 0; }

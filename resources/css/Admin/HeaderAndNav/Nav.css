@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.containere {
   position: relative;
   width: 100%;
 }
@@ -45,24 +45,18 @@ body {
 .navigation ul:nth-child(1) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -29px;
   width: 100%;
 }
 
 .navigation ul:nth-child(2) {
   position: relative;
   top: 10%;
-  left: 0;
+  left: -29px;
   width: 100%;
   transform: translate(0%);
 }
 
-.navigation ul:nth-child(3) {
-  position: relative;
-  bottom: -61px;
-  left: 2px;
-  width: 100%;
-}
 
 .navigation ul li {
   position: relative;
@@ -76,8 +70,8 @@ body {
   margin: 56px 0;
 }
 
-.navigation ul li.active, 
-.navigation ul li:hover{
+.navigation ul li.active,
+.navigation ul li:hover {
   background-color: var(--white);
 }
 
@@ -107,7 +101,9 @@ body {
   height: 60px;
   line-height: 75px;
   text-align: center;
+  z-index: 1;
 }
+
 .navigation ul li a .icon ion-icon {
   font-size: 1.75rem;
 }
@@ -124,12 +120,12 @@ body {
 
 /* --------- curve outside ---------- */
 .navigation ul li.active a::before,
-.navigation ul li:hover a::before{
+.navigation ul li:hover a::before {
   content: "";
   position: absolute;
-  right: 0;
+  right: -29px;
   top: -50px;
-  width: 50px;
+  width: 58px;
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
@@ -138,12 +134,12 @@ body {
 }
 
 .navigation ul li.active a::after,
-.navigation ul li:hover a::after{
+.navigation ul li:hover a::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -29px;
   bottom: -50px;
-  width: 50px;
+  width: 66px;
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
@@ -160,6 +156,7 @@ body {
   background: var(--white);
   transition: 0.5s;
 }
+
 .main.active {
   width: calc(100% - 80px);
   left: 80px;
@@ -190,18 +187,21 @@ body {
   transition: left 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.toggle.active{
+.toggle.active {
   left: 230px;
 }
 
 
 .user {
-  position: relative;
-  width: 45px;
-  height: 45px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
+  right: 8px;
+  top: 3px;
+  border: #0f0e0e0f solid 0.4px;
 }
 
 .user img {
@@ -212,6 +212,101 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/*
+====================================================================
+------------------ scrollbar 
+================
+*/
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+
+
+
+/* ======================= profile ====================== */
+
+body div.containere div.topbar div.menu {
+  position: relative;
+  top: 67px;
+  right: 182px;
+  display: none;
+  z-index: 1;
+  background-color: #FFF;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 228px;
+  transition: 0.5s;
+  border: #06060614 solid 0.5px;
+}
+
+body div.containere div.topbar div.menu::before {
+  background-color: #fff;
+  content: '';
+  height: 20px;
+  position: absolute;
+  right: 13px;
+  transform: rotate(45deg);
+  top: -10px;
+  width: 20px;
+  border-left: #06060614 solid 0.5px;
+  border-top: #06060614 solid 0.5px;
+}
+
+body div.containere div.topbar div.menu ul a {
+  color: #2a2185;
+  text-decoration: none;
+}
+
+body div.containere div.topbar div.menu ul a li {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 7px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: auto;
+}
+
+body div.containere div.topbar div.menu ul a li:hover{
+  color: #8d89be;
+}
+
+body div.containere div.topbar div.menu ul a li ion-icon{
+  font-family: 'Material Icons';
+  font-size: 26px;
+  margin-right: 13px;
+}
+
+body div.containere div.topbar div.menu div.profile h2{
+  font-size: 29px;
+  font-family: auto;
+  opacity: 0.7;
+  color: #2a2185;
+}
+
+body div.containere div.topbar div.menu div.profile div.imageprofile {
+  width: 55px;
+  height: 55px;
+}
+
+body div.containere div.topbar div.menu div.profile div.imageprofile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* ======================= Cards ====================== */
 .cardBox {
@@ -255,6 +350,7 @@ body {
 .cardBox .card:hover {
   background: var(--blue);
 }
+
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .iconBx {
@@ -287,10 +383,12 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .cardHeader h2 {
   font-weight: 600;
   color: var(--blue);
 }
+
 .cardHeader .btn {
   position: relative;
   padding: 5px 10px;
@@ -305,32 +403,41 @@ body {
   border-collapse: collapse;
   margin-top: 10px;
 }
+
 .details table thead td {
   font-weight: 600;
 }
+
 .details .recentOrders table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .details .recentOrders table tr:last-child {
   border-bottom: none;
 }
+
 .details .recentOrders table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
+
 .details .recentOrders table tr td {
   padding: 10px;
 }
+
 .details .recentOrders table tr td:last-child {
   text-align: end;
 }
+
 .details .recentOrders table tr td:nth-child(2) {
   text-align: end;
 }
+
 .details .recentOrders table tr td:nth-child(3) {
   text-align: center;
 }
+
 .status.delivered {
   padding: 2px 4px;
   background: #8de02c;
@@ -339,6 +446,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+
 .status.pending {
   padding: 2px 4px;
   background: #e9b10a;
@@ -347,6 +455,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+
 .status.return {
   padding: 2px 4px;
   background: #f00;
@@ -355,6 +464,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+
 .status.inProgress {
   padding: 2px 4px;
   background: #1795ce;
@@ -373,6 +483,7 @@ body {
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
+
 .recentCustomers .imgBx {
   position: relative;
   width: 40px;
@@ -380,6 +491,7 @@ body {
   border-radius: 50px;
   overflow: hidden;
 }
+
 .recentCustomers .imgBx img {
   position: absolute;
   top: 0;
@@ -388,42 +500,65 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 .recentCustomers table tr td {
   padding: 12px 10px;
 }
+
 .recentCustomers table tr td h4 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2rem;
 }
+
 .recentCustomers table tr td h4 span {
   font-size: 14px;
   color: var(--black2);
 }
+
 .recentCustomers table tr:hover {
   background: var(--blue);
   color: var(--white);
 }
+
 .recentCustomers table tr:hover td h4 span {
   color: var(--white);
 }
+
+/* ====================== show data ========================== */
+
+body div.containere div.show-data {
+  position: fixed;
+  background: #00000063;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {
     left: -300px;
   }
+
   .navigation.active {
     width: 300px;
     left: 0;
   }
+
   .main {
     width: 100%;
     left: 0;
   }
+
   .main.active {
     left: 300px;
   }
+
   .cardBox {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -433,9 +568,11 @@ body {
   .details {
     grid-template-columns: 1fr;
   }
+
   .recentOrders {
     overflow-x: auto;
   }
+
   .status.inProgress {
     white-space: nowrap;
   }
@@ -445,24 +582,30 @@ body {
   .cardBox {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .cardHeader h2 {
     font-size: 20px;
   }
+
   .user {
     min-width: 40px;
   }
+
   .navigation {
     width: 100%;
     left: -100%;
     z-index: 1000;
   }
+
   .navigation.active {
     width: 100%;
     left: 0;
   }
+
   .toggle {
     z-index: 10001;
   }
+
   .main.active .toggle {
     color: #fff;
     position: fixed;

@@ -1,0 +1,22 @@
+body section {
+    position: relative;
+    top: 122px;
+    max-width: 920px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body section article div.content-body h2{
+    font-size: 34px;
+    color: #22b78ea6;
+    font-family: auto;
+    font-weight: 700;
+}
+
+body section article div.dont{
+    position: relative;
+    top: 100px;
+    font-family: auto;
+}
+
+

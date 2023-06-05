@@ -1,116 +1,104 @@
 @section('Fouter')
-    <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <footer class="footer" style="background-image: url('/image/footer-bg.png')">
 
         <div class="footer-top section">
             <div class="container grid-list">
 
                 <div class="footer-brand">
 
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo">
-                </a>
+                    <a href="/" class="logo position-relative">
+                        <img src="/logo/Logo.png" width="90" height="50" alt="EduWeb logo" >
+                    </a>
 
-                <p class="footer-brand-text">
-                    Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.
-                </p>
+                    <p class="footer-brand-text fabou">{{ __('Footer.aboutete') }}</p>
 
-                <div class="wrapper">
-                    <span class="span">Add:</span>
+                    <div class="wrapper">
+                        <span class="span">{{ __('Footer.Address') }}</span>
 
-                    <address class="address">70-80 Upper St Norwich NR2</address>
-                </div>
+                        <address class="address">{{ __('Footer.Address1') }}</address>
+                    </div>
 
-                <div class="wrapper">
-                    <span class="span">Call:</span>
+                    <div class="wrapper">
+                        <span class="span">{{ __('Footer.Phone') }}</span>
 
-                    <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
-                </div>
+                        <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+                    </div>
 
-                <div class="wrapper">
-                    <span class="span">Email:</span>
+                    <div class="wrapper">
+                        <span class="span">{{ __('Footer.Email') }}</span>
 
-                    <a href="mailto:info@eduweb.com" class="footer-link">info@eduweb.com</a>
-                </div>
+                        <a href="mailto:info@eduweb.com" class="footer-link">contact@Chbani.com</a>
+                    </div>
 
                 </div>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">{{ __('Footer.OnlinePlatform') }}</p>
+                        </li>
+
+                        <li>
+                            <a href="/" class="footer-link">{{ __('Header.Home') }}</a>
+                        </li>
+
+                        <li>
+                            <a href="/services" class="footer-link">{{ __('Header.Services') }}</a>
+                        </li>
+
+                        <li>
+                            <a href="/about" class="footer-link">{{ __('Header.About') }}</a>
+                        </li>
+
+                        <li>
+                            <a href="/new-order" class="footer-link">{{ __('Header.NewOrder') }}</a>
+                        </li>
+
+                        <li>
+                            <a href="/lange" class="footer-link">{{ __('Header.lang') }}</a>
+                        </li>
+
+                    </ul>
 
                 <ul class="footer-list">
 
-                <li>
-                    <p class="footer-list-title">Online Platform</p>
-                </li>
+                    <li>
+                        <p class="footer-list-title">{{ __('Footer.Links') }}</p>
+                    </li>
 
-                <li>
-                    <a href="#" class="footer-link">About</a>
-                </li>
+                    <li>
+                        <a href="#" class="footer-link">{{ __('Footer.ContactUs') }}</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="footer-link">Courses</a>
-                </li>
+                    <li>
+                        <a href="#" class="footer-link">{{ __('Footer.Gallery') }}</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="footer-link">Instructor</a>
-                </li>
+                    <li>
+                        <a href="#" class="footer-link">{{ __('Footer.NewsArticles') }}</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="footer-link">Events</a>
-                </li>
+                    <li>
+                        <a href="#" class="footer-link">{{ __('Footer.FAQ') }}</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="footer-link">Instructor Profile</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Purchase Guide</a>
-                </li>
-
-                </ul>
-
-                <ul class="footer-list">
-
-                <li>
-                    <p class="footer-list-title">Links</p>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Contact Us</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Gallery</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">News & Articles</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">FAQ's</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Sign In/Registration</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Coming Soon</a>
-                </li>
+                    <li>
+                        <a href="#" class="footer-link">{{ __('Footer.ComingSoon') }}</a>
+                    </li>
 
                 </ul>
 
                 <div class="footer-list">
 
-                <p class="footer-list-title">Contacts</p>
+                <p class="footer-list-title">{{ __('Footer.Contacts') }}</p>
 
-                <p class="footer-list-text">
-                    Enter your email address to register to our newsletter subscription
-                </p>
+                <p class="footer-list-text">{{ __('Footer.youremailaddress') }}</p>
 
                 <form action="" class="newsletter-form">
-                    <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+                    <input type="email" name="email_address" placeholder="{{ __('Footer.Youremail') }}" required class="input-field">
 
                     <button type="submit" class="btn has-before">
-                    <span class="span">Subscribe</span>
+                    <span class="span">{{ __('Footer.Subscribe') }}</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                     </button>
@@ -157,7 +145,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a></p>
+                <p class="copyright">{{ __('Footer.Copyright') }}<a href="/" class="copyright-link">{{ __('Footer.CHBANI') }}</a></p>
             </div>
         </div>
 
