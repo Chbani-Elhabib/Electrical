@@ -22,3 +22,9 @@ body div.containere section article{
     position: relative;
     top: 73px;
 }
+
+body div.containere section article form div label{
+    font-size: 18px;
+    font-weight: 550;
+    font-family: math;
+}

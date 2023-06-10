@@ -32,11 +32,11 @@
                 <div class="card">
                     <div>
                         <div class="numbers">284</div>
-                        <div class="cardName">Comments</div>
+                        <div class="cardName">Orders</div>
                     </div>
 
                     <div class="iconBx">
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <ion-icon name="bookmarks-outline"></ion-icon>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">customers</th>
-                                <th scope="col">Phone</th>
+                                <th scope="col">body</th>
                                 <th scope="col">...</th>
                             </tr>
                         </thead>
@@ -75,7 +75,7 @@
                                             <div>
                                                 <img src="/users-image/{{$Order->Person->Photo}}"  alt="profaile users">
                                             </div>
-                                            <h5>{{$Order->Person->UserName}}</h5>
+                                            <h5 class="ms-2">{{$Order->Person->UserName}}</h5>
                                         </div>
                                     </th>
                                     <td><h5>{{$Order->body}}</h5></td>

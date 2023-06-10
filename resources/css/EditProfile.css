@@ -62,7 +62,19 @@ section article form div.image-profile input {
 
 
 
+html[lang="ar"] section article form div{
+    text-align: right;
+}
 
+html[lang="ar"] section article form div label{
+    margin-right: 13px;
+}
+
+html[lang="ar"] section article form div textarea,
+html[lang="ar"] section article form div select,
+html[lang="ar"] section article form div input{
+    direction: rtl;
+}
 
 section article form div:nth-child(2) {
     display: flex;

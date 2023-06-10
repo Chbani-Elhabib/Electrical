@@ -79,6 +79,7 @@ body div.containere section article form div.image-profile input {
 
 
 
+
 body div.containere section article form div:nth-child(2) {
     display: flex;
     grid-area: input1;

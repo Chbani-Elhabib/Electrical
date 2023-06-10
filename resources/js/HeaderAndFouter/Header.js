@@ -8,7 +8,7 @@ $(document).ready(function(){
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 1500,
+            timer: 10000,
             timerProgressBar: true,
             didOpen: (toast) => {
                 toast.addEventListener('mouseenter', Swal.stopTimer)

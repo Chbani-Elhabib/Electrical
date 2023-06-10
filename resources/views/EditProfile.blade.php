@@ -26,43 +26,43 @@
                 </div>
 
                 <div>
-                    <label class="label_add_user" for="">UserName :</label>
+                    <label class="label_add_user" for="">{{ __('Profile.UserName') }}</label>
                     <input name='UserName' class="input_add_user form-control" value="{{$Person->UserName}}" type="text">
                     <p class="form-text text-danger mb-0"></p>
                 </div>
 
                 <div>
-                    <label class="label_add_user" for="">Full Name :</label>
+                    <label class="label_add_user" for="">{{ __('Profile.FullName') }}</label>
                     <input name='FullName' class="input_add_user form-control input_add_user" value="{{$Person->FullName}}" type="text">
                     <p class="form-text text-danger mb-0"></p>
                 </div>
 
                 <div>
-                    <label class="label_add_user" for="">Telf :</label>
+                    <label class="label_add_user" for="">{{ __('Profile.Telf') }}</label>
                     <input name='Telf' class="input_add_user form-control input_add_user" value="{{$Person->Telf}}" type="text">
                     <p class="form-text text-danger mb-0"></p>
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label labels mb-0">Country :</label>
+                    <label for="exampleInputEmail1" class="form-label labels mb-0">{{ __('Profile.Country') }}</label>
                     <select class="form-select form-control form-select inputevalue input_add_user" name='Country'>
                         <option  disabled></option>
-                        <option selected value='Morroco'>Morroco</option>
+                        <option selected value='Morroco'>{{ __('NewOrder.Morroco') }}</option>
                     </select>
                     <div class="form-text text-danger"></div>
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label labels mb-0">Regions :</label>
+                    <label for="exampleInputEmail1" class="form-label labels mb-0">{{ __('Profile.Regions') }}</label>
                     <select class="form-select form-select Regions input_add_user" name='Regions'>
                         <option  disabled></option>
-                        <option selected value="Souss-Massa">Souss-Massa</option>
+                        <option selected value="Souss-Massa">{{ __('NewOrder.Souss') }}</option>
                     </select>
                     <div class="form-text text-danger"></div>
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label mb-0">city :</label>
+                    <label for="exampleInputEmail1" class="form-label mb-0">{{ __('Profile.city') }}</label>
                     <select class="form-select form-select city input_add_user" name='city'>
                         <option selected disabled></option>
                         <option @if( $Person->city == 'Agadir' ) selected @endif value="Agadir">{{ __('NewOrder.Agadir') }}</option>
@@ -81,13 +81,13 @@
 
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label mb-0">Address :</label>
+                    <label for="exampleInputEmail1" class="form-label mb-0">{{ __('Profile.Address') }}</label>
                     <textarea name="Address" class="form-control input_add_user" id="exampleFormControlTextarea1" rows="1" placeholder="Address">{{$Person->Address}}</textarea>                            
                     <div id="emailHelp" class="form-text"></div>
                 </div>
 
                 <div class="clearfix mt-2">
-                    <button class="btn btn-success add-user float-end">Update</button>
+                    <button class="btn btn-success add-user float-end">{{ __('Profile.Update') }}</button>
                 </div>
                 
             </form>

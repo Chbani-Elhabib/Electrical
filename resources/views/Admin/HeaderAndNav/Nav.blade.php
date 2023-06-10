@@ -5,9 +5,9 @@
             <li>
                 <a href="/admin">
                     <span class="icon">
-                        <ion-icon name="logo-apple"></ion-icon>
+                        <img src="/logo/Logo.png" alt="logo">
                     </span>
-                    <span class="title">Brand Name</span>
+                    <span class="title">Electrical</span>
                 </a>
             </li>
 

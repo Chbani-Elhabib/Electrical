@@ -19,4 +19,34 @@ body section article div.dont{
     font-family: auto;
 }
 
+body section article table tbody tr{
+    height: 67px;
+}
 
+body section article table tbody tr th {
+    position: relative;
+}
+
+body section article table tbody tr td {
+    position: relative;
+}
+
+body section article table tbody tr th h5{
+    position: absolute;
+    top: 16%;
+    left: 48%;
+    transform: translate(-50%);
+    font-size: 15px;
+    width: 100px;
+    font-family: math;
+}
+
+body section article table tbody tr td h5{
+    position: absolute;
+    top: 16%;
+    left: 48%;
+    transform: translate(-50%);
+    font-size: 19px;
+    width: 100%;
+    font-family: emoji;
+}

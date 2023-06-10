@@ -23,7 +23,7 @@
                 <table id='example' class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">date</th>
+                            <th scope="col" style="width: 136px;">date</th>
                             <th scope="col">body</th>
                         </tr>
                     </thead>

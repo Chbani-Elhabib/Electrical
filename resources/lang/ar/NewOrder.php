@@ -2,13 +2,13 @@
 
 return [
 
-    'Name' => 'اسم',
-    'Phone' => 'هاتف',
+    'Name' => ': اسم',
+    'Phone' => ': هاتف',
     'Country' => 'دولة',
     'Regions' => 'منطقة',
     'city' => 'مدينة',
-    'Address' => 'عنوان',
-    'body' => 'محتوى',
+    'Address' => ': عنوان',
+    'body' => ': محتوى',
     'NewOrder' => 'طلب جديد',
     
     

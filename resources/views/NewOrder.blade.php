@@ -18,27 +18,27 @@
 			@csrf
 
 			<div>
-				<label for="Name" class="form-label mb-0 ms-3">{{ __('NewOrder.Name') }} :</label>
+				<label for="Name" class="form-label mb-0 ms-3">{{ __('NewOrder.Name') }}</label>
 				<input type="text" class="form-control inpute" id="Name" value="@isset($Person->FullName) {{$Person->FullName}} @endif" name='Name'>
 				<div class='text-danger'></div>
 			</div>
 
             
 			<div>
-				<label for="Telf" class="form-label mb-0 ms-3"><span class="position-relative text-danger" >*</span>{{ __('NewOrder.Phone') }} :</label>
+				<label for="Telf" class="form-label mb-0 ms-3 position-relative "><span class="position-absolute text-danger" >*</span>{{ __('NewOrder.Phone') }}</label>
 				<input type="text" class="form-control inpute" id="Telf" name='Telf' value="@isset($Person->Telf) {{$Person->Telf}} @endif">
                 <div class='text-danger'></div>
 			</div>
 
 
             <div>
-				<label for="Address" class="form-label mb-0 ms-3">{{ __('NewOrder.Address') }} :</label>
+				<label for="Address" class="form-label mb-0 ms-3">{{ __('NewOrder.Address') }}</label>
 				<textarea class="form-control inpute" name='Address' rows="3" id="Address">@isset($Person->Address) {{$Person->Address}} @endif</textarea>
 				<div class='text-danger'></div>
 			</div>
 
             <div>
-				<label for="body" class="form-label mb-0 ms-3">{{ __('NewOrder.body') }} :</label>
+				<label for="body" class="form-label mb-0 ms-3">{{ __('NewOrder.body') }}</label>
 				<textarea class="form-control inpute" name='body' rows="5" id="body"></textarea>
 				<div class='text-danger'></div>
 			</div>

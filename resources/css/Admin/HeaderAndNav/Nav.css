@@ -91,7 +91,7 @@ body {
 
 .navigation ul li.active a,
 .navigation ul li:hover a {
-  color: var(--blue);
+  color: #24b78b;
 }
 
 .navigation ul li a .icon {
@@ -102,6 +102,16 @@ body {
   line-height: 75px;
   text-align: center;
   z-index: 1;
+}
+
+.navigation ul:nth-child(1) li a .icon {
+  left: -1px;
+  top: -8px;
+}
+
+.navigation ul li a .icon img{
+  height: 100%;
+    width: 100%;
 }
 
 .navigation ul li a .icon ion-icon {

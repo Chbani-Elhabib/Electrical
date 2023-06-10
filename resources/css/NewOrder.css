@@ -26,8 +26,16 @@ section form div label{
     color: black;
 }
 
+html[lang="ar"] section form div{
+    text-align: right;
+}
+
+html[lang="ar"] section form div label{
+    margin-right: 12px;
+}
+
 section form div label span{
-    top: 34px;
+    top: 3px;
     left: -8px;
 }
 

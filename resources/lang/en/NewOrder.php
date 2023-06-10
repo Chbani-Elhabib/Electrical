@@ -2,13 +2,13 @@
 
 return [
 
-    'Name' => 'Name',
-    'Phone' => 'Phone',
+    'Name' => 'Name :',
+    'Phone' => 'Phone :',
     'Country' => 'Country',
     'Regions' => 'Region',
     'city' => 'city',
-    'Address' => 'Address',
-    'body' => 'body',
+    'Address' => 'Address :',
+    'body' => 'body :',
     'NewOrder' => 'New Order',
     
     

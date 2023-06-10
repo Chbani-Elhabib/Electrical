@@ -18,20 +18,20 @@
 			@csrf
 
 			<div class="position-relative mb-2">
-				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Password') }} :</label>
+				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Password') }}</label>
 				<input type="password" class="form-control inpute" >
 				<img class="eye position-absolute" src="/image/close_eye.png" alt="eye">
 				<div class="text-danger"></div>
 			</div>
 
 			<div class="mb-2">
-				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Newpassword') }} :</label>
+				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Newpassword') }}</label>
 				<input type="password" class="form-control inpute" name='password' >
 				<div class="text-danger"></div>
 			</div>
 
 			<div class="mb-2">
-				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Configpassword') }} :</label>
+				<label for="UserName" class="form-label mb-0">{{ __('EditPassword.Configpassword') }}</label>
 				<input type="password" class="form-control inpute" >
 				<div class="text-danger"></div>
 			</div>

@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="clearfix">
-                        <button class="btn btn-success add-user float-end">Add User</button>
+                        <button class="btn btn-success add-user float-end">Update User</button>
                         <a href="/admin/customers">
                             <button type='button' class="btn btn-danger float-end">Clean</button>
                         </a>
